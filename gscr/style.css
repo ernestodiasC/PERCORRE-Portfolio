@@ -56,3 +56,6 @@ img{
 input,textarea,select{
     background-color:#020000;
 }
+section{
+    padding-bottom: 100px;
+}
