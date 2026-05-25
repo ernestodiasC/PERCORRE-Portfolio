@@ -1,14 +1,25 @@
+:root{
+    font-size:30px;
+}
+
 @font-face{
     font-family: 'editundo'; 
     src: url('./editundo.ttf') format('truetype');
 }
 body{
-    background-color:#020000;
-    color:#FFFFFF;
-    border-color:#FFFFFF;
+    background:linear-gradient(to bottom,#100032,#000000);
+    color: #8230Fb;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 2rem;
 }
 footer{
-    background-color:#181212;
+    background:linear-gradient(to bottom,#200064,#000000);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -16,20 +27,33 @@ footer{
 }
 header{
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0rem;
     width: 100%;
-    background-color:#181212;
+    height: clamp(.0125rem, 5vw, 1.25rem);
+    background:linear-gradient(to top,#200064,#000000);
 }
-.nav{
-    left: 5px;
+nav{
+    top: clamp(.00125rem, .5vw, .125rem);
+    left: .1vw;
+}
+nav{
+    font-size: clamp(.01rem, 4vw, 1rem);
 }
 h1,h2,h3,h4,h5,h6,p,h2,ol,li,a,body,input,textarea,
 form,select{
-    color:#FFFFFF;
+    color: #8230Fb;
     font-family:"editundo";
+    line-height: 105%;
 }
-a{
+h1{
+    color:#A250FF;
+    text-shadow: 0px 0px 10px #A250FFAB;
+}
+ul{
+    list-style-type: none;
+}
+.link{
     color:#5940ff;
 }
 .red{
@@ -56,6 +80,11 @@ img{
 input,textarea,select{
     background-color:#020000;
 }
-section{
-    padding-bottom: 100px;
+.box{
+    padding: .75rem;
+    margin: .5rem;
+    display:inline-block;
+    text-align: center;
+    flex: 1;
+    width: 90vw;
 }
